@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickSeguro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <header> 
+        <h1>ClickSeguro</h1>
+        <p>Serviços Residenciais com Segurança</p>
+    </header>
+    <main>
+        <section class = "login-box">
+            <h2>Acesso do cliente</h2>
+            <form id = "loginForm">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" onclick="login()" >Entrar</button>
+            </form> 
+          <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+          <p id="message"></p>
+        </section>
+    
+        <section class="search-box">
+            <h2>Buscar profissional</h2>
+            <input type="text" id="searchInput" placeholder="Ex: Encanador">
+            <button id="searchButton" onclick="buscar()"> Buscar</button>
+            <div id="searchResults"> </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
